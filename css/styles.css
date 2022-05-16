@@ -6,6 +6,7 @@
   --card-set-gap: 30px;
   --bg-color-hero: #E5E5E5;
   --color-icon: #AFB1B8;
+  --color-icon-bg: #44454E;
 }
 
 body {
@@ -352,22 +353,9 @@ img {
   align-items: center;
   justify-content: center;
 }
-.socials:not:last-child{
+.socials:not(last-child) {
   margin-right: 10px;
 }
-
-/* .team-social > .socials {
-  
-}
-.socials {
-  flex-basis: calc(100%/4 - 30);
-}  */
-/* .socials .socials-link + .socials-link {
-  margin-left: 10px;
-} */
-/* .socials:not:last-child {
-  margin-right: 10px;
-} */
 .socials-link {
   display: flex;
   justify-content: center;
@@ -479,7 +467,12 @@ img {
 
   color: rgba(255, 255, 255, 0.6);
 }
+.network-address {
+  margin-left: 70px;
+}
 .slogan {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -487,6 +480,29 @@ img {
   text-transform: uppercase;
   
   color: #FFFFFF;
+}
+.network-list {
+  display: flex;
+}
+.network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-icon-bg);
+  border-radius: 50%;
+}
+.network-icon {
+  fill: #FFFFFF;
+}
+.network-link:hover,
+.network-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.network:not(last-child) {
+  margin-right: 10px;
 }
 /* Кнопки фильтра портфолио */
 
