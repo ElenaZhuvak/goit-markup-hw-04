@@ -21,15 +21,40 @@
             <a class="logo" href="./index.html">Web<span class="logo-title">Studio</span></a> 
             <nav class="nav-box">
                 <ul class="navigation-links">
-                    <li class="site-nav"><a class="link-nav current" href="./index.html">Студия</a></li>
-                    <li class="site-nav"><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
-                    <li class="site-nav"><a class="link-nav" href="">Контакты</a></li>
+                    <li class="site-nav">
+                        <a class="link-nav current" href="./index.html">Студия</a>
+                    </li>
+
+                    <li class="site-nav">
+                        <a class="link-nav" href="./portfolio.html">Портфолио</a>
+                    </li>
+
+                    <li class="site-nav">
+                        <a class="link-nav" href="">Контакты</a>
+                    </li>
                 </ul>
             </nav>
 
             <ul class="contact-box">
-                <li class="site-contact"><a class="contact-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="site-contact"><a class="contact-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="site-contact">
+                    <a class="contact-nav" href="mailto:info@devstudio.com">
+                        <svg class="contact-icon" width="16" height="12">
+                            <use href="./img-studio/sprite-main.svg#mail">
+                            </use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+
+                <li class="site-contact">
+                    <a class="contact-nav" href="tel:+380961111111">
+                        <svg class="contact-icon" width="10" height="16">
+                            <use href="./img-studio/sprite-main.svg#phone">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div> 
     </header>
@@ -37,7 +62,7 @@
     <main>
     <!-- Секция Герой -->
 
-        <section class="hero section">
+        <section class="hero overlay">
             <div class="container">     
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button">Заказать услугу</button>
@@ -52,27 +77,54 @@
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features">
                 <li class="features-item">
+                    <div class="icon-features">
+                        <svg width="70" height="70">
+                            <use href="./img-studio/sprite-features.svg#antenna"> 
+                            </use>
+                        </svg>
+                    </div>
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features-text">
                         Идейные соображения, а также начало
                         повседневной работы по формированию позиции.
                     </p>
                 </li>
+
                 <li class="features-item">
+                    <div class="icon-features">
+                        <svg width="70" height="70">
+                            <use href="./img-studio/sprite-features.svg#clock">
+                            </use>
+                        </svg>
+                    </div>
                     <h3 class="features-title">Пунктуальность</h3>
                     <p class="features-text">
                         Задача организации, в особенности же рамки и
                         место обучения кадров влечет за собой.
                     </p>
                 </li>
+
                 <li class="features-item">
+                    <div class="icon-features">
+                        <svg width="70" height="70">
+                            <use href="./img-studio/sprite-features.svg#diagram">
+                            </use>
+                        </svg> 
+                    </div>
                     <h3 class="features-title">Планирование</h3>
                     <p class="features-text">
                         Равным образом консультация с широким активом
                         в значительной степени обуславливает.
                     </p>
                 </li>
+
                 <li class="features-item">
+                    <div class="icon-features">
+                        <svg width="70" height="70">
+                            <use href="./img-studio/sprite-features.svg#astronaut">    
+                            </use>
+                        </svg>
+                    </div>
                     <h3 class="features-title">Современные технологии</h3>
                     <p class="features-text">
                         Значимость этих проблем настолько очевидна,
@@ -101,42 +153,16 @@
         </section>
         
     <!-- Секция Наша команда -->
-        <section class="team section">
-            <div class="container">
-            <h2 class="team-title">Наша команда</h2>
-        
+    <section class="team section">
+        <div class="container">
+        <h2 class="team-title">Наша команда</h2>
+    
             <ul class="list-members">
                 <li class="member">
                     <img src="./img-studio/igor-dem.jpeg" alt="Фото Игоря Демьяненко" width="270">
                     <div class="member-discription">
                         <h3 class="team-member">Игорь Демьяненко</h3>
                         <p class="team-stream">Product Designer</p>
-                        <ul class="socials">
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Instagram">
-                                  <svg>
-                                      <use></use>
-                                  </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Twitter">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Facebook">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Linkedin">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                        </ul>
                     </div>
                 </li>
                 
@@ -145,32 +171,6 @@
                     <div class="member-discription">
                         <h3 class="team-member">Ольга Репина</h3>
                         <p class="team-stream">Frontend Developer</p>
-                        <ul class="socials">
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Instagram">
-                                  <svg>
-                                      <use></use>
-                                  </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Twitter">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Facebook">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Linkedin">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                        </ul>
                     </div>
                 </li>
                 
@@ -179,32 +179,6 @@
                     <div class="member-discription">
                         <h3 class="team-member">Николай Тарасов</h3>
                         <p class="team-stream">Marketing</p>
-                        <ul class="socials">
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Instagram">
-                                  <svg>
-                                      <use></use>
-                                  </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Twitter">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Facebook">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Linkedin">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                        </ul>
                     </div>
                 </li>
                 
@@ -213,37 +187,11 @@
                     <div class="member-discription">
                         <h3 class="team-member">Михаил Ермаков</h3>
                         <p class="team-stream">UI Designer</p>
-                        <ul class="socials">
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Instagram">
-                                  <svg>
-                                      <use></use>
-                                  </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Twitter">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Facebook">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link" href="" aria-label="Linkedin">
-                                    <svg>
-                                        <use></use>
-                                    </svg>
-                            </li>
-                        </ul>
                     </div>
                 </li>
             </ul>
-            </div>
-        </section>
+        </div>
+    </section>
     </main>
 
 <!-- Футер -->
